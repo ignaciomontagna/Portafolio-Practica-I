@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVs Carátula - Portafolio de Proyectos</title>
+    <style>
+        :root {
+            --primary: #00b4d8;
+            --bg-card: #082a3f;
+            --bg-page: #051d2d;
+            --text-color: #ffffff;
+            --text-secondary: #90e0ef;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            background: linear-gradient(145deg, #0f4c6e, #082a3f);
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            page-break-after: always;
+        }
+
+        .header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            margin: 0 0 5px 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header h2 {
+            color: var(--text-secondary);
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #d8f3dc;
+        }
+
+        .section-title {
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #e0e1dd;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .job-date {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        /* Estilos para impresión / Guardar en PDF */
+        @media print {
+            body {
+                background-color: #051d2d !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PÁGINA 1: CV IGNACIO MONTAGNA -->
+    <div class="page">
+        <div class="header">
+            <h1>Ignacio Montagna Lilloy</h1>
+            <h2>Estudiante de Desarrollo de Software | Especialista en Comunicación e Implementación de Sistemas</h2>
+            <div class="contact-info">
+                <span>📍 Mendoza, Argentina</span> | 
+                <span>📞 (54) 2616 188261</span> | 
+                <span>✉️ nachomontagna@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="section-title">Acerca de Mí</div>
+        <p>Profesional con más de 14 años de experiencia en organizaciones de salud. Especializado en comunicación institucional, gestión de canales digitales, implementación de sistemas y análisis de información comercial. Participé en proyectos de transformación tecnológica y crecimiento organizacional. Actualmente ampliando mis conocimientos en desarrollo web, Power BI y análisis de datos para la toma de decisiones.</p>
+
+        <div class="section-title">Formación Académica</div>
+        <p><span class="job-title">Tecnicatura Superior en Desarrollo de Software</span> — IES N° 9-008 Manuel Belgrano (2025 - En curso)</p>
+        <p><span class="job-title">Bachiller en Humanidades</span> — Colegio Beato Scalabrini (2011)</p>
+
+        <div class="section-title">Certificaciones y Perfeccionamiento</div>
+        <ul>
+            <li>Firma Digital — Inst. Manuel Belgrano (Mayo 2026)</li>
+            <li>Herramientas de IA Generativa — Inst. Manuel Belgrano (Mayo 2026)</li>
+            <li>Diseño e IA como Herramienta de Comunicación — Inst. Manuel Belgrano (Mayo 2026)</li>
+        </ul>
+
+        <div class="section-title">Habilidades Técnicas y Transversales</div>
+        <ul>
+            <li><strong>Desarrollo & Datos:</strong> Python (Inicial), SQL (Inicial), Power BI (En formación), HTML5, CSS3, Bootstrap 5.</li>
+            <li><strong>Sistemas & Herramientas:</strong> Macena (GECROS), Infomedical (Presmed y Afilmed), Sony Vegas, DaVinci Resolve.</li>
+            <li><strong>Blandas:</strong> Comunicación institucional, gestión de canales digitales, análisis de leads y trabajo en equipo.</li>
+        </ul>
+
+        <div class="section-title">Experiencia Laboral</div>
+        <p><span class="job-title">Comunicaciones y Sistemas — Medimas Mutual de Salud</span> <br>
+        <span class="job-date">Junio 2011 – Actualidad</span></p>
+        <ul>
+            <li>Desarrollo y administración del canal digital principal de atención mediante WhatsApp.</li>
+            <li>Diseño e implementación de Mediclub, programa de beneficios para afiliados.</li>
+            <li>Participación en la migración tecnológica e implementación del sistema Gecros.</li>
+            <li>Elaboración de reportes comerciales y análisis de leads para seguimiento de resultados.</li>
+            <li>Acompañamiento en el crecimiento institucional de 3.000 a 10.000 afiliados.</li>
+        </ul>
+    </div>
+
+    <!-- PÁGINA 2: CV IVO GONZALEZ -->
+    <div class="page">
+        <div class="header">
+            <h1>Ivo Gonzalez</h1>
+            <h2>Técnico Electricista | Estudiante de IA, Ciencia de Datos y Desarrollo Web</h2>
+            <div class="contact-info">
+                <span>📍 Maipú, Mendoza, Argentina</span> | 
+                <span>📞 261-552-8932</span> | 
+                <span>✉️ ivogonzalez54@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="section-title">Acerca de Mí</div>
+        <p>Técnico Electricista y estudiante de IA y Ciencia de Datos con experiencia en mantenimiento técnico, soporte de hardware, atención al cliente y control de stock. Conocimientos en AutoCAD, mantenimiento de equipos, armado y reparación de PC. Interesado en desarrollarme profesionalmente en áreas de tecnología, soporte IT, automatización y análisis de datos.</p>
+
+        <div class="section-title">Formación Académica</div>
+        <p><span class="job-title">Tecnicatura Superior en IA y Ciencia de Datos</span> — IES N° 9-008 Manuel Belgrano (2026 - Cursando)</p>
+        <p><span class="job-title">Secundaria Técnica (Técnico Electricista)</span> — Escuela Emilce Civit 4-003 (2019 - 2024)</p>
+
+        <div class="section-title">Certificaciones y Cursos</div>
+        <ul>
+            <li>Curso de Armado y Reparación de PC — Instituto Celsius (Finalizado)</li>
+            <li>Curso de MySQL I — Happy Programmer (Finalizado)</li>
+        </ul>
+
+        <div class="section-title">Habilidades Técnicas y Transversales</div>
+        <ul>
+            <li><strong>Técnicas:</strong> Armado y reparación de PC, soporte técnico de hardware, AutoCAD, MySQL, HTML5, CSS3, Bootstrap.</li>
+            <li><strong>Mantenimiento:</strong> Servicio técnico de equipos informáticos, montaje de pantallas LED y gestión de stock.</li>
+            <li><strong>Blandas:</strong> Trabajo en equipo, aprendizaje rápido, fácil adaptación y atención técnica a clientes.</li>
+        </ul>
+
+        <div class="section-title">Experiencia Laboral</div>
+        <p><span class="job-title">Multifunción — DIC Argentina SA</span> <br>
+        <span class="job-date">Diciembre 2025 – Agosto 2026</span></p>
+        <ul>
+            <li>Atención y asistencia técnica a clientes.</li>
+            <li>Servicio técnico en máquinas de soldar y gestión de stock.</li>
+            <li>Carga y gestión de remitos y facturas en sistema interno.</li>
+        </ul>
+
+        <p><span class="job-title">Técnico Armador de Pantallas & Operador — Congress Rental</span> <br>
+        <span class="job-date">Mayo 2025 – Diciembre 2025</span></p>
+        <ul>
+            <li>Mantenimiento preventivo y correctivo a pantallas LED.</li>
+            <li>Operador de eventos, montaje y desmontaje técnico.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

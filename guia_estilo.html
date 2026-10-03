@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniproyecto 3 - Guía de Estilo UI</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guía de Estilo & Componentes UI</h1>
+        <p style="text-align: center; color: #90e0ef;">Demostración de elementos visuales interactivos programados exclusivamente con HTML5 y CSS3.</p>
+
+        <!-- 1. ENLACES ANIMADOS -->
+        <div class="seccion">
+            <h2>1. Enlaces Animados</h2>
+            <nav class="nav-links">
+                <a href="#" class="link-animado">Inicio</a>
+                <a href="#" class="link-animado">Catálogo</a>
+                <a href="#" class="link-animado">Soporte Tecnico</a>
+            </nav>
+        </div>
+
+        <!-- 2. ACORDEÓN DE TEXTOS -->
+        <div class="seccion">
+            <h2>2. Acordeón de Textos (CSS Pure)</h2>
+            
+            <div class="acordeon-item">
+                <input type="checkbox" id="item1" class="acordeon-check">
+                <label for="item1" class="acordeon-titulo">¿Qué garantía tienen los componentes?</label>
+                <div class="acordeon-contenido">
+                    <p>Todos nuestros productos cuentan con 12 meses de garantía oficial directa de fábrica y soporte técnico local.</p>
+                </div>
+            </div>
+
+            <div class="acordeon-item">
+                <input type="checkbox" id="item2" class="acordeon-check">
+                <label for="item2" class="acordeon-titulo">¿Realizan envíos a domicilio?</label>
+                <div class="acordeon-contenido">
+                    <p>Hacemos envíos sin cargo en todo el Gran Mendoza y despachos a todo el país mediante transporte expreso.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. CAMPOS DE FORMULARIO CON FOCO ANIMADO -->
+        <div class="seccion">
+            <h2>3. Campo con Foco Resaltado</h2>
+            <label for="input-demo" style="display: block; margin-bottom: 8px;">Haga clic en el campo para probar el efecto :focus</label>
+            <input type="text" id="input-demo" class="campo-texto" placeholder="Escriba aquí para activar el borde brillante...">
+        </div>
+
+        <!-- 4. BOTONES 3D -->
+        <div class="seccion" style="text-align: center;">
+            <h2>4. Botones Interactivos 3D</h2>
+            <p>Haga clic en el botón para sentir el efecto de presión:</p>
+            <button class="btn-3d">Presionar Botón 3D</button>
+        </div>
+    </div>
+
+</body>
+</html>
